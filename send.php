@@ -22,15 +22,15 @@
 	$mail->IsSMTP();
 	$mail->SMTPDebug  	= true;
 	$mail->SMTPAuth   	= true;
-	$mail->Host       	= 'ssl://smtp.gmail.com';
-	$mail->Port       	= 465;
-	$mail->Username   	= 'aritz.ondarra@gmail.com';
-	$mail->Password   	= '72578366';
+	$mail->Host       	= 'smtp.1and1.es'; // ssl://smtp.gmail.com
+	$mail->Port       	= 587; // 465
+	$mail->Username   	= 'info@aritzondarra.com';
+	$mail->Password   	= 'fasf784saTs6';
 	$mail->Subject    	= 'New '.$formTypes[$_POST['type']]. ' Message from aritzondarra.com';
 	$mail->CharSet		= 'utf-8';
 	$mail->WordWrap 	= 50;
 	
-	$mail->SetFrom('no-reply@website.com', 'aritzondarra.com');
+	$mail->SetFrom('info@aritzondarra.com', 'aritzondarra.com');
 
 	$mail->AddAddress('aritz.ondarra@gmail.com');
 	
